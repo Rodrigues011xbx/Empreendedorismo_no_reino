@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kingdom Entrepreneurs Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0A2463",
+                        "accent": "#D4AF37",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#101622",
+                        "neutral-light": "#F4F4F4",
+                        "neutral-dark": "#1A2332",
+                        "text-light": "#111318",
+                        "text-dark": "#F4F4F4",
+                        "subtext-light": "#616f89",
+                        "subtext-dark": "#94a3b8"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-light dark:border-neutral-dark/50 px-6 sm:px-10 lg:px-20 py-4 sticky top-0 z-50 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary dark:text-accent">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Kingdom Entrepreneurs</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent" href="#">About</a>
+<a class="text-primary dark:text-accent text-sm font-bold leading-normal" href="#">Blog</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90">
+<span class="truncate">Login</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="p-2 rounded-md hover:bg-neutral-light dark:hover:bg-neutral-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+<!-- HeroSection -->
+<div class="w-full @container py-10">
+<div class="flex flex-col gap-6 px-4 py-10 rounded-xl bg-neutral-light dark:bg-neutral-dark @[864px]:flex-row @[864px]:items-center">
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-3 text-left">
+<p class="text-accent text-sm font-bold">FEATURED ARTICLE</p>
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                        Empowering Innovation in the Kingdom
+                                    </h1>
+<h2 class="text-sm font-normal leading-normal text-subtext-light dark:text-subtext-dark @[480px]:text-base">
+                                        Discover inspiring stories, leadership insights, and financial wisdom to fuel your entrepreneurial journey.
+                                    </h2>
+</div>
+<button class="flex w-fit min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90">
+<span class="truncate">Read More</span>
+</button>
+</div>
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full" data-alt="Abstract image with blue and gold geometric shapes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhFh9laLryCgp05gIlCYQGjiDPVW8BPZUSPKhepU5RSjacE5v7gyOHFvi_lC5dgJbdXrnKjwHSARYZo2643ZEV8Awz5plOJCz--1nXWfuxP5SXFyT23wPc9b5UlYK4_S-peqq4gT_EAcmpIiVytLUX64yvZYUnmDE7m_3kFFW2sDcNtIqAISDCL5qdmBGentkHilm1el-Sfb5Ovb6lutxvqS7ggXzr9uS0PZ7cmBAzNA2GEQFY91BOoQqMIHNF2BjINOqes6_E0fRv");'></div>
+</div>
+</div>
+<!-- Search and Filters -->
+<div class="flex flex-col md:flex-row items-center gap-4 px-4 py-8">
+<div class="w-full md:flex-1">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-subtext-light dark:text-subtext-dark flex border-none bg-neutral-light dark:bg-neutral-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-neutral-light dark:bg-neutral-dark focus:border-none h-full placeholder:text-subtext-light dark:placeholder:text-subtext-dark px-4 pl-2 text-base font-normal leading-normal" placeholder="Search articles by keyword..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-2 p-3 flex-wrap items-center justify-center">
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 dark:bg-primary/30 px-4">
+<p class="text-primary dark:text-text-dark text-sm font-bold leading-normal">All</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-neutral-light dark:bg-neutral-dark hover:bg-primary/20 dark:hover:bg-primary/30 px-4">
+<p class="text-sm font-medium leading-normal">Leadership</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-neutral-light dark:bg-neutral-dark hover:bg-primary/20 dark:hover:bg-primary/30 px-4">
+<p class="text-sm font-medium leading-normal">Finance</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-neutral-light dark:bg-neutral-dark hover:bg-primary/20 dark:hover:bg-primary/30 px-4">
+<p class="text-sm font-medium leading-normal">Innovation</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-neutral-light dark:bg-neutral-dark hover:bg-primary/20 dark:hover:bg-primary/30 px-4">
+<p class="text-sm font-medium leading-normal">Testimonies</p>
+</div>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Latest Articles &amp; News</h2>
+<!-- Article Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+<!-- Article Card 1 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="Entrepreneurs collaborating in a modern office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfFgqn8deIEK90Q13VxFKRWZhwTufRj9BfW0HTvET8wW8znGxkeZp453e16ARom76pynsXQOWYY7qsq6kJ_itD_7MY8wLI2MoHcAeuFcrf-y44LkZ3yVK5_b924jRRnjz_RhbsCBkSuYykSwg2_imFhPgiKmgw6EuUwrEq9WOSLMEg7MMFT2oiNsRzmr45uQuKknbtXChnRCZufmEZEhU0kUTmXRV4gsUg0IlhOxfTTJobzqocHo-199KY072xmW9pt45uUOXTptMK')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Leadership</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">The 5 Pillars of Kingdom Leadership</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">Discover the foundational principles that distinguish truly effective leaders in the marketplace.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">John Doe • Oct 26, 2023</p>
+</div>
+</div>
+<!-- Article Card 2 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="A person calculating finances with a calculator and charts" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGVbGQCw39LTXxwZAlw_Vp2dcwEuglUpaX-cjo1yFjZgIMlOf4CtjSszKtRUqLzXIQIuxJW49ml7o50XlU3Rymo_ZI24yVRgEPVE-Xf2sWK3h9EyJYh2BMpO_jJMa2tWQoYeFdVtiqK3ITW1MvS1lRsur002joSmJZBkmXsYhCQaXGpQokOyjAfP6Kn-DVetaxglC_uY05LWik5WmZ4H4dNqbyez67pKNFhphtT-wpBtp8rBRTb2K23yidPLfoFH12d1AV26U3yqqF')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Finance</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">Financial Stewardship for Business Owners</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">Learn how to manage your business finances with wisdom and integrity.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">Jane Smith • Oct 22, 2023</p>
+</div>
+</div>
+<!-- Article Card 3 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="A team brainstorming innovative ideas around a table with sticky notes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvRadQqps_yKLGsbvFpZCNBygtfLOx9MQgvF7ryeY-xc414QCVTHvZtcgLTyIhXgdal-lPXmNSyvO9ehTE-uuZeHdZ2aLhk83lHrSXP22Yi__gtJFFRAV2Wj1J_DS_bnlkvYGKCciz5y9RvJf_pKb6GldMZdQ_sZRsEsw1rZ3-tTQNM_f2sSzw3sscLB7ufx2nhwcZzPwGJUc5oZp3hkUPQ6ZMKXgJubzLqC1vy4nV8KYL9IJiao9vbteiQD-yUpGtufRUbh0MenfR')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Innovation</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">Sparking Creativity in Your Team</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">Practical tips for fostering an environment of innovation and creative problem-solving.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">Samuel Lee • Oct 19, 2023</p>
+</div>
+</div>
+<!-- Article Card 4 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="People smiling and celebrating a success" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHwKu6ysrdr73AmIDkF-M-_sFYSvTgdGYbD0UNKZD8Ymd7t9g6Dd2bIoonUG1mssTCmkN96ZfkFlx3i-P4pwRxwhs6ksjEuGeVaFjYIdfw4cZL4AD_vpbNJQYUkOf6PHNSH1yGZrKW3iami7OVBLxus2hUy-SKYusWJRacWC98jydKQCWJtplYOHdaIrV18n_C1IMfNAOsdkNuQAzys6AwDdtTTvZj62vf1t7YyIvlDmGqn3iMVfgMeP_M7FGK1r4k9yG282ZPAKvB')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Testimonies</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">From Idea to Impact: A Founder's Story</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">An inspiring testimony of faith, perseverance, and breakthrough in the startup world.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">Maria Garcia • Oct 15, 2023</p>
+</div>
+</div>
+<!-- Article Card 5 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="A close-up of a business strategy document on a desk" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDp6XKl_ZAuYFYfUmjDOqwKOgBLdYvSomX4XnnWkqNGSpnk0_VeLgJLe-ykWun8UAQeyQwXOSi1-UOwbgen1At8U5Rl7KZyVuh2iqgOR0HjmmxCTta__hFgY_9-7F7gn5gD1fBKYJ-bOY1mZCpb8S9MKizyxVSFyfDghJgrBPtAs-_EjP8FvGrGM5vOP7Yp8nGafCniZB15ANUmQY-TbdTtRb8HdDZAn3EtJdKfy5bu6AAerjnpQo-HgmuL81nBypbeBkXU5sYKz-dk')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Leadership</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">Marketing with Purpose and Integrity</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">How to build a brand that reflects your values and attracts the right customers.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">David Chen • Oct 11, 2023</p>
+</div>
+</div>
+<!-- Article Card 6 -->
+<div class="flex flex-col bg-background-light dark:bg-neutral-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
+<div class="aspect-video bg-cover bg-center" data-alt="Graphs and charts showing financial growth on a tablet" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqpZmSlkYNo1lYQgAdzxFX2jAqlKmjq0M49r5YLiE-dPNCKbBr4unri5UoJeTIZVuhB6usUSMKMNKZMlKJbavvaym6O4oDZHXA2pyBhpql91VJBh_2sUao88ROq4PEQ1sZNP4EtOjKnA5W2VyvxAGCvsE-144PHEv-lXNRx_mWDS2Qsr5ENNl_ZyQxpPuL3jtdqehA41uhg0mfW-3KWzgkYahtvkwl6cmLhAAFRNYlsDEbli-vMHRfmtfn4N08zhGFfbYhoMKyX__8')"></div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="mb-3">
+<span class="text-xs font-bold uppercase text-accent bg-accent/20 px-2 py-1 rounded-full">Finance</span>
+</div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-primary dark:group-hover:text-accent">Investing for a Greater Return</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4 flex-grow">Exploring the concept of eternal returns and how to invest your profits wisely.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">Rachel Adams • Oct 08, 2023</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-2 p-8">
+<button class="flex items-center justify-center p-2 size-10 rounded-lg hover:bg-neutral-light dark:hover:bg-neutral-dark text-subtext-light dark:text-subtext-dark">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-lg bg-primary text-white text-sm font-bold">1</button>
+<button class="flex items-center justify-center size-10 rounded-lg hover:bg-neutral-light dark:hover:bg-neutral-dark text-sm font-medium">2</button>
+<button class="flex items-center justify-center size-10 rounded-lg hover:bg-neutral-light dark:hover:bg-neutral-dark text-sm font-medium">3</button>
+<span class="text-sm">...</span>
+<button class="flex items-center justify-center size-10 rounded-lg hover:bg-neutral-light dark:hover:bg-neutral-dark text-sm font-medium">10</button>
+<button class="flex items-center justify-center p-2 size-10 rounded-lg hover:bg-neutral-light dark:hover:bg-neutral-dark">
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-light dark:bg-neutral-dark mt-10">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary dark:text-accent">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Kingdom Entrepreneurs</h2>
+</div>
+<p class="mt-4 text-sm text-subtext-light dark:text-subtext-dark">Fueling your entrepreneurial journey with faith and wisdom.</p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="font-bold tracking-wide">Explore</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Home</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">About Us</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Blog</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold tracking-wide">Categories</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Leadership</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Finance</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Innovation</a></li>
+<li><a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">Testimonies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold tracking-wide">Follow Us</h4>
+<div class="flex mt-4 space-x-4">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.019c0 4.438 2.865 8.229 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.019C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-300 dark:border-gray-700 pt-8 text-center text-sm text-subtext-light dark:text-subtext-dark">
+<p>© 2023 Kingdom Entrepreneurs. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reino Empreendedor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D4AF37", // Gold
+            "background-light": "#F8F9FA", // Off-white
+            "background-dark": "#0A2342", // Navy Blue
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"],
+            "serif": ["Playfair Display", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+    .text-shadow-custom {
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-base text-background-dark dark:text-background-light">
+<div class="relative flex w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-solid border-gray-200 dark:border-gray-800 px-6 md:px-10 lg:px-20 py-4">
+<div class="flex items-center gap-3">
+<div class="text-primary size-7">
+<img src="./img/logo-removebg-preview.png">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-background-dark dark:text-background-light text-xl font-bold font-serif leading-tight">Reino Empreendedor</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end items-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-background-dark dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Sobre</a>
+<a class="text-background-dark dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="/missao.html">Missão</a>
+<a class="text-background-dark dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="/projetos.html">Recursos</a>
+<a class="text-background-dark dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="/contato.html">Contato</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Junte-se a Nós</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col">
+<!-- HeroSection -->
+<section class="@container">
+<div class="flex min-h-[60vh] md:min-h-[80vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center" data-alt="A subtle, abstract background image with golden light flares and dark blue tones, evoking a sense of inspiration and purpose." style='background-image: linear-gradient(rgba(10, 35, 66, 0.7) 0%, rgba(10, 35, 66, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnImdwsFlqiggZy_NwAYG_EMeF_SHdZEdQNpwY2jvvOthkAo9JY5oUf_7p0zniAOlhHuc7NuA8gs9kdx3iNzdsngzrhboV_JfC8gLzEsaKwsGIFsBreITCYzrBvHlyhfc3ie7CHrjv7I3rr0P5_aQERdgyHil04arkMfslhXQziW5dWBXC4JQixMl7E4ijWKlaNw1S27OKFR0CL_GXv26RzpuFRAUeqhv4fXfb3-e24Z35koTZlqlbd3cclJv0U5vVSh6i86m1J1ev");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-4xl font-serif font-bold leading-tight tracking-tight md:text-6xl text-shadow-custom">
+                Empreendedorismo com Propósito Divino
+              </h1>
+<h2 class="text-gray-200 text-lg font-normal leading-normal md:text-xl">
+                Capacitando líderes para construir negócios que glorificam a Deus e transformam a sociedade.
+              </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 md:h-14 md:px-8 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity mt-4">
+<span class="truncate">Inicie a Sua Jornada</span>
+</button>
+</div>
+</section>
+<!-- Presentation Section -->
+<section class="w-full max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
+<h2 class="text-background-dark dark:text-background-light text-3xl md:text-4xl font-bold font-serif leading-tight tracking-tight">Bem-vindo ao Nosso Movimento</h2>
+<p class="text-gray-600 dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed mt-4">
+              Unimos fé e empreendedorismo para criar um impacto duradouro. Acreditamos que os seus negócios podem ser uma poderosa ferramenta para o Reino de Deus, e estamos aqui para o guiar em cada passo do caminho.
+            </p>
+</section>
+<!-- FeatureSection -->
+<section class="w-full bg-white dark:bg-background-dark py-16 md:py-24">
+<div class="max-w-5xl mx-auto px-6">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="text-background-dark dark:text-background-light text-3xl md:text-4xl font-bold font-serif leading-tight tracking-tight">Os Nossos Pilares</h2>
+<p class="text-gray-600 dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed max-w-3xl mx-auto">Fundamentos para um negócio de sucesso alinhado com valores eternos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/40 p-8 shadow-sm">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-background-dark dark:text-background-light text-xl font-bold font-serif leading-tight">Liderança com Propósito</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Desenvolva uma liderança servidora e visionária, inspirada por princípios bíblicos.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/40 p-8 shadow-sm">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-4xl">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-background-dark dark:text-background-light text-xl font-bold font-serif leading-tight">Empreendedorismo Consciente</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Crie negócios inovadores que resolvem problemas reais e refletem a excelência do Reino.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-background-light dark:bg-gray-900/40 p-8 shadow-sm">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-background-dark dark:text-background-light text-xl font-bold font-serif leading-tight">Comunidade de Fé</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Conecte-se com outros empreendedores que partilham da sua fé e dos seus valores.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary CTA Section -->
+<section class="w-full bg-background-dark dark:bg-gray-900 py-16 md:py-24">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<h2 class="text-white text-3xl md:text-4xl font-bold font-serif leading-tight">Junte-se à Nossa Comunidade</h2>
+<p class="text-gray-300 mt-4 text-lg">Receba inspiração semanal, recursos exclusivos e atualizações do nosso movimento diretamente na sua caixa de entrada.</p>
+<form class="mt-8 flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow h-12 px-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:ring-2 focus:ring-primary focus:border-primary transition-shadow" placeholder="O seu melhor email" type="email"/>
+<button class="flex-shrink-0 flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal hover:opacity-90 transition-opacity" type="submit">
+                        Inscrever-se
+                    </button>
+</form>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+<div class="max-w-6xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3">
+<div class="text-primary size-7">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+</div>
+<h3 class="text-background-dark dark:text-background-light text-xl font-bold font-serif">Reino Empreendedor</h3>
+</div>
+<p class="mt-4 text-gray-600 dark:text-gray-400 text-sm">Construindo negócios com propósito eterno.</p>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">Links</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm transition-colors" href="#">Sobre</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm transition-colors" href="#">Recursos</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm transition-colors" href="#">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">Siga-nos</h4>
+<div class="mt-4 flex space-x-4">
+<a class="text-gray-500 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<img alt="Instagram logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANDbCmshZ9yiAdujl__lF0hdrlvToTUp5Xo9J2aQdWPC8Y3MKx2Qyb7JSkdgtdzbOkfbkr9Ref60Btv-HEAPNV15K0lXI6RnTEsPTCwyE-Y9rXwJOirmn5hIpvrIL3NlFFP_KCrDZ3V2XWKURGgxm6I7RiGc3ZdPe-djSOOz7A7zqSDcw4bclm4gtaxwpsf4aHeVJ6aJPU6BXBWh5PStp4mppsT4eaKMv4orBZkdWiYV5gSLeT7GFJ_7-LE_zonwG_HMgfz5KoL2c6"/>
+</a>
+<a class="text-gray-500 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<img alt="Facebook logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDhmAeUe-sb8cGC7xKOFQEw1mHNKTla0SriFac1d9rpT6JqTFnK04IKTKhaD-x31HSMk2K-iHW2Jh78wH6mrDIJSOp7--DTYD0qkA_FiGt561ys8cpdJRtSR1yfF0IhkTUL-JaWF4PO3otTTfGMF2o6I2TSXYGAuMORipAxQMIhSztxpaYLGLXKXjTUAX5FKF9HO7qDT4WS34d_mqjgQICGnM8l3Z1fYRJmGtK1nkvtenIZqg7EoRtsWtYBnPSxuy3C67rE-4zOXko"/>
+</a>
+<a class="text-gray-500 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<img alt="LinkedIn logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNBxRSHLkHPdnO4XC5k_vyuu5BJMMbpfT71gF_1jiBYSKHJUNAVhw8QlV-5mcVtEK0btzE_w2dndhfTCVMbXDe4hEMiFRieeorjtJI6Uzc7qJ1vQfXnhsEkawvMJ1gtYn4P-v0FNkSvr4N4wAoClzxqMhLUTVvSLnBNV1k6Vz_7r_kMFHxvrd20uQJg57ydDYbwMhRaqi8sGd4X-hf5RqGJoo_Big3ZV5wKCL0JNI1xcVYWhium9fgVqcZ4Go5mVoDDobM2bTTs4I8"/>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-200 dark:border-gray-800 pt-8 text-center">
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Reino Empreendedor. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+</body></html>
